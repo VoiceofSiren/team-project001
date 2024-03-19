@@ -147,7 +147,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
     
-   JavaScriptのfetch、JSON、SpringBootの＠ResponseBody 어노테이션 등을 활용하여 카트를 구현했습니다.。<br>
+   JavaScript의 fetch, JSON, SpringBoot의 ＠ResponseBody 어노테이션 등을 활용하여 카트를 구현했습니다.<br>
    장바구니 페이지는 번역기를 사용할 경우 레이아웃이 깨져서 그대로 전시했습니다. 양해해 주시면 감사하겠습니다.<br>
 
   + Rendering
@@ -207,7 +207,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   <thead>
     <tr>
       <th align="center">관리자 페이지</th>
-      <th align="center">회원 목록록</th>
+      <th align="center">회원 목록</th>
       <th align="center">Q&A</th>
     </tr>
   <tbody>

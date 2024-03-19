@@ -129,17 +129,17 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
 </table>
 
-  1. Navigationからカテゴリーをすぐ選択できるようにし、ページDEPTHを減らすことでCPRの向上を目指しました。<br>
-  2. 縦が長いページであるため、ユーザーが欲しい情報をすぐ確認できるよう、サイドバーを具象しました。<br>
-  3. より直感的にログインができるよう、IDとパスワードの最低文字数を超えれば、ログインボターンのOpacityが１になるように調節しました。<br><br>
+  1. Navigation에서 카테고리를 바로 선택할 수 있도록 하고, 페이지 DEPTH를 줄여 CPR을 향상시켰습니다.<br>
+  2. 세로로 긴 페이지인 만큼 사용자가 원하는 정보를 바로 확인할 수 있도록 사이드바를 형상화하였습니다.<br>
+  3. 보다 직관적으로 로그인할 수 있도록 아이디와 비밀번호의 최소 글자 수를 초과하면 로그인 버튼의 Opacity를 조정하였습니다. <br><br>
 
   + AJAX
     
 　<table>
   <thead>
     <tr>
-      <th align="center">商品詳細</th>
-      <th align="center">カート</th>
+      <th align="center">OrderDetails</th>
+      <th align="center">Cart</th>
     </tr>
   <tbody>
     <tr>
@@ -149,26 +149,26 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
     
-   JavaScriptのfetch、JSON、SpringBootの＠ResponseBodyアノテーションなどを活用し、カートを具象しました。<br>
-   カートページは翻訳機を使う場合、レイアウトが崩れたため、そのまま展示しました。ご了承いただければと思います。<br>
+   JavaScriptのfetch、JSON、SpringBootの＠ResponseBody 어노테이션 등을 활용하여 카트를 구현했습니다.。<br>
+   장바구니 페이지는 번역기를 사용할 경우 레이아웃이 깨져서 그대로 전시했습니다. 양해해 주시면 감사하겠습니다.<br>
 
   + Rendering
       
-  1. Indexの5000x3000、4mb以上のJPEG画像を約1900x1000までリサイズし、webpに変換することでレンダリング速度を改善しました。<br> 
-  2. 通販サイトの場合、SEO対策が重要であるため、Metaタグを活用しました。<br>
-  3. 一部のscriptにdeferを適用し、htmlのparsingを改善する努力をしました。<br>
-  4. 一部のjsにEvent Delegation通して、不要なEvent Handlerを減らす努力をしました。<br>
+  1. Index의 5000x3000, 4mb 이상의 JPEG 이미지를 약 1900x1000으로 리사이징하여 webp로 변환하여 렌더링 속도를 향상시켰습니다.<br> 
+  2. 쇼핑몰 사이트의 경우, SEO 대책이 중요하기 때문에 Meta 태그를 활용했습니다.<br>
+  3. 일부 script에 defer를 적용하여 html의 parsing을 개선하기 위해 노력했습니다.<br>
+  4. 일부 js에 Event Delegation을 통해 불필요한 Event Handler를 줄이는 노력을 했습니다.<br>
 
-## バックエンド
-  + 商品関連
+## Back-end
+  + 상품 관련
 
   <table>
   <thead>
     <tr>
-      <th align="center">商品登録（管理者）</th>
-      <th align="center">商品詳細・修正・削除（管理者）</th>
-      <th align="center">商品リスト一覧（ユーザー）</th>
-      <th align="center">商品詳細（ユーザー）</th>
+      <th align="center">상품 등록（Admin）</th>
+      <th align="center">상품 상세/수정/삭제（Admin）</th>
+      <th align="center">상품 목록 조회（User）</th>
+      <th align="center">상품 상세세（User）</th>
     </tr>
   <tbody>
     <tr>
@@ -181,17 +181,17 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </table>
 
 
-  管理者ページから商品・写真・在庫などをDB、resourceフォルダーに登録し、クライアントページからそのデーターを読む形です。<br>
+  관리자 페이지에서 상품, 사진, 재고 등을 DB, resource 폴더에 등록하고 클라이언트 페이지에서 해당 데이터를 읽는 형태입니다.<br>
     
-  + 注文
+  + 주문
 
   <table>
   <thead>
     <tr>
-      <th align="center">会員注文ページ</th>
-      <th align="center">会員注文ページ</th>
-      <th align="center">会員注文ページ</th>
-      <th align="center">会員注文完了ページ</th>
+      <th align="center">회원 주문 페이지</th>
+      <th align="center">회원 주문 페이지</th>
+      <th align="center">회원 주문 페이지</th>
+      <th align="center">회원 주문 완료 페이지</th>
     </tr>
   <tbody>
     <tr>
@@ -203,13 +203,13 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
 
-  + 管理者ページ
+  + 관리자 페이지
 
   <table>
   <thead>
     <tr>
-      <th align="center">管理者ページ</th>
-      <th align="center">会員リスト</th>
+      <th align="center">관리자 페이지</th>
+      <th align="center">회원 목록록</th>
       <th align="center">Q&A</th>
     </tr>
   <tbody>
@@ -221,17 +221,17 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
 
-　売上はペンディング、非会員注文一覧はまだ、バグの問題で紹介することはできませんでした。まだ原因が分からないため、後ほど解決したいと思います。
+　매출은 보류, 비회원 주문 목록은 아직 버그 문제로 소개하지 못했습니다. 아직 원인을 알 수 없어 추후에 해결하도록 하겠습니다.
 
 
-  + 認証(Spring Interceptor)
+  + 인증(Spring Interceptor)
 
   <table>
   <thead>
     <tr>
-      <th align="center">User1の会員情報ページ</th>
-      <th align="center">権限外の要請</th>
-      <th align="center">ログ</th>
+      <th align="center">User1의 회원정보 페이지</th>
+      <th align="center">권한 외 요청</th>
+      <th align="center">Log</th>
     </tr>
   <tbody>
     <tr>
@@ -242,23 +242,23 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
 
-  未認証ユーザーの要請は会員ログインページに、権限があい会員の要請は404エラーページをリターンして、認証を強化しました。<br>
-  権限外の要請がある場合は、log4jを通して、WARNログを残すようにコードを作成しました。<br>
+  미인증 사용자의 요청은 회원 로그인 페이지로, 권한이 있는 회원의 요청은 404 오류 페이지를 반환하여 인증을 강화했습니다.<br>
+  권한 외 요청이 있을 경우 log4j를 통해 WARN 로그를 남기도록 코드를 작성했습니다.<br>
 
-  解決できなかった点：一部のページではInterceptorが適用されない現象があるので、今後改善してみたいと思います。<br>
+  해결하지 못한 점 : 일부 페이지에서 Interceptor가 적용되지 않는 현상이 있어 향후 개선해보고자 합니다.<br>
 
-## リファクタリング
-- 近いうちにAWSへのdeployを計画中
-- 会員登録機能にAJAXを追加し、フロントエンドからもバリデーションチェックを追加
-- ページ処理のバグを改善する予定
+## 리팩토링
+- 조만간에 AWS에 배포 계획 중
+- 회원 가입 기능에 AJAX를 추가하고, 프런트엔드에서도 유효성 검사를 추가했습니다.
+- 페이지 처리 버그 개선 예정
 
-## 参考資料
-- 商品写真360枚: https://www.coor.kr/
-- インデックスページのイメージ: https://unsplash.com/ko
-- ロゴ: https://www.figma.com/
-- Kakao Map API, Kakao アドレスAPI : https://developers.kakao.com/
+## 참고자료
+- 제품 사진 360장: https://www.coor.kr/
+- 인덱스 페이지 이미지: https://unsplash.com/ko
+- 로고: https://www.figma.com/
+- Kakao Map API, Kakao 주소 API : https://developers.kakao.com/
 - Sweetalert2: https://sweetalert2.github.io/
-- SVGおよびフォント: https://fonts.google.com/
+- SVG 및 폰트: https://fonts.google.com/
 
 
 

@@ -58,9 +58,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
 ## 프로젝트 설명
 ※[프로젝트에 대한 자세한 설명과 과정은 여기를 참조하세요](https://zenn.dev/eldorado215) 
 
-ページの日本語はGoogle翻訳を使って臨時的に翻訳しております。
-
-## フロントエンド
+## Front-end
 
   + Responsive WEB
 <table>
@@ -116,8 +114,8 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
     <tr>
       <th align="center">Navigation</th>
       <th align="center">Side bar</th>
-      <th align="center">login(未入力)</th>
-      <th align="center">login(入力後)</th>
+      <th align="center">login(입력 전)</th>
+      <th align="center">login(입력 후)</th>
     </tr>
   <tbody>
     <tr>

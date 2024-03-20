@@ -11,7 +11,7 @@
 ## 전체 목차
 - [프로젝트 개요](#프로젝트-개요)
 - [프로젝트 설명(프론트엔드·백엔드)](#프로젝트-설명)
-- [리팩터링](#리팩터링)
+- [리팩토링](#리팩토링)
 - [참고 자료](#참고-자료)
 
 
@@ -166,7 +166,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
       <th align="center">상품 등록（Admin）</th>
       <th align="center">상품 상세/수정/삭제（Admin）</th>
       <th align="center">상품 목록 조회（User）</th>
-      <th align="center">상품 상세세（User）</th>
+      <th align="center">상품 상세（User）</th>
     </tr>
   <tbody>
     <tr>
@@ -189,7 +189,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
       <th align="center">회원 주문 페이지</th>
       <th align="center">회원 주문 페이지</th>
       <th align="center">회원 주문 페이지</th>
-      <th align="center">회원 주문 완료 페이지</th>
+      <th align="center">회원 주문 페이지</th>
     </tr>
   <tbody>
     <tr>

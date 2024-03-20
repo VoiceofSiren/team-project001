@@ -44,21 +44,21 @@ Perion은 한국의 MMORPG에서 등장하는 전사의 마을로, '전사처럼
 
     
 - 팀 멤버:
-+ 권혁모 (PM/BE/FE) [@HyonHyonKOR](https://github.com/HyonHyonKOR) <br><br>
+  + 권혁모 (PM/BE/FE) [@HyonHyonKOR](https://github.com/HyonHyonKOR) <br><br>
 UX/UI 디자인 총괄 / 클라이언트 페이지 마크업 및 FE / 서버 아키텍처 / 회원 기능 전반 / 유효성 검사 / 인증 (Spring Interceptor)<br><br>
-+ 김찬혁 (BE/FE)  [@swaeluu](https://github.com/swaeluu) <br><br>
+  + 김찬혁 (BE/FE)  [@swaeluu](https://github.com/swaeluu) <br><br>
 UX/UI 디자인 / 관리자 페이지 마크업 및 FE / Q&A 기능 / 고객 리뷰 기능 / 페이징 처리<br><br>
-+ 박영무 (BE/FE)  [@VoiceofSiren](https://github.com/VoiceofSiren) <br><br>
+  + 박영무 (BE/FE)  [@VoiceofSiren](https://github.com/VoiceofSiren) <br><br>
 AJAX / 상품 관련 기능 / 재고 관리 기능 / 회원 카트 기능 / 회원 주문 기능 / DBA <br><br>
-+ 이범선(BE/FE) [@Titan153](https://github.com/Titan153)　<br><br>
+  + 이범선(BE/FE) [@Titan153](https://github.com/Titan153)　<br><br>
 공지사항 기능 / ID·PW 재설정 기능 / 마크업 보조 / 외부 API / 참고 자료 정리　<br><br>
-+ 창명성 (BE/FE)　[@Ainchel](https://github.com/Ainchel)　<br><br>
+  + 창명성 (BE/FE)　[@Ainchel](https://github.com/Ainchel)　<br><br>
 AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / 비회원 주문 기능　 <br><br>
 
 ## 프로젝트 설명
-※[프로젝트에 대한 자세한 설명과 과정은 여기를 참조하세요](https://zenn.dev/eldorado215) 
+- Front-end와 Back-end로 분류하여 설명 드리겠습니다.
 
-## Front-end
+### Front-end
 
   + Responsive WEB
 <table>
@@ -157,7 +157,7 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   3. 일부 script에 defer를 적용하여 html의 parsing을 개선하기 위해 노력했습니다.<br>
   4. 일부 js에 Event Delegation을 통해 불필요한 Event Handler를 줄이는 노력을 했습니다.<br>
 
-## Back-end
+### Back-end
   + 상품 관련
 
   <table>

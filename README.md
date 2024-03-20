@@ -147,15 +147,8 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
   </tbody>
   </table>
     
-   JavaScript의 fetch, JSON, SpringBoot의 ＠ResponseBody 어노테이션 등을 활용하여 카트를 구현했습니다.<br>
-   장바구니 페이지는 번역기를 사용할 경우 레이아웃이 깨져서 그대로 전시했습니다. 양해해 주시면 감사하겠습니다.<br>
+  1. JavaScript의 fetch, @RestController 어노테이션 등을 활용하여 카트 기능을 구현했습니다.<br>
 
-  + Rendering
-      
-  1. Index의 5000x3000, 4mb 이상의 JPEG 이미지를 약 1900x1000으로 리사이징하여 webp로 변환하여 렌더링 속도를 향상시켰습니다.<br> 
-  2. 쇼핑몰 사이트의 경우, SEO 대책이 중요하기 때문에 Meta 태그를 활용했습니다.<br>
-  3. 일부 script에 defer를 적용하여 html의 parsing을 개선하기 위해 노력했습니다.<br>
-  4. 일부 js에 Event Delegation을 통해 불필요한 Event Handler를 줄이는 노력을 했습니다.<br>
 
 ### Back-end
   + 상품 관련
@@ -247,9 +240,9 @@ AJAX / 재고 관리 기능 / 회원 카트 기능 / 비회원 카트 기능 / �
                     
 
 ## 리팩토링
-- Admin, Member 등의 사용자 Entity에 대하여 Spring Security 6의 SecurityFilterChain을 통해 Interceptor를 대신하려고 하였으나, <br> &nbsp;&nbsp;&nbsp; 각 Entity에 역할을 담을 수 있는 Collection 필드가 없어서 향후 수정할 예정입니다.
-- AWS에 배포할 것을 계획 중입니다.
-- 회원 가입 기능에 AJAX를 추가하고, 프론트엔드에서도 유효성 검사를 추가했습니다.
+- 일부 페이지에서 Interceptor가 적용되지 않는 문제를 해결하기 위한 대안으로 Spring Security 6를 사용할 예정입니다.
+  - 이에 따라 사용자 별 권한 부여를 위한 필드를 추가할 예정입니다.
+- AWS에 배포할 예정입니다.
 - 페이지 처리 버그 개선 예정입니다.
 
 ## 참고자료

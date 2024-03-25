@@ -1,5 +1,5 @@
-<div align="center">
-<h1>Project PERION</h1>
+<div>
+<h1 align="center">Project PERION</h1>
 <p>
 이 프로젝트는 'Perion'이라는 남성 패션 전자상거래 사이트입니다.<br>
 전자상거래 사이트를 선택한 이유는 CRUD, session, 파일 처리, 마크업 등을 활용할 수 있어서이며,<br>
